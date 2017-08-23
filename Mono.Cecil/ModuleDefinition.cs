@@ -1083,6 +1083,7 @@ namespace Mono.Cecil {
 					stream.CopyTo (memory);
 
 				memory.Position = 0;
+				stream.Dispose();
 				stream = memory;
 			}
 
